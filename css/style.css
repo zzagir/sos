@@ -22,6 +22,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   width: 100%;
   max-width: 100%;
@@ -60,9 +64,12 @@ header .header-nav ul {
   display: flex;
 }
 header .header-nav ul li a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
 }
 header .header-nav ul li:not(:last-child) {
   margin: 0 40px 0 0;
