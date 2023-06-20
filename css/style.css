@@ -120,6 +120,8 @@ header .container .header-main .header-last .header-last__lang::after {
   height: 30px;
   margin: 0 25px;
   background: #fff;
+  opacity: 0.8;
+  border-radius: 5px;
 }
 header .container .header-main .header-last .header-last__lang svg {
   margin: 0 5px;
@@ -142,7 +144,7 @@ header .container .header-main .header-last .header-last__links a svg {
 .one {
   height: 960px;
   background: url("../images/bg/bg-image-1.jpg");
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -246,9 +248,64 @@ header .container .header-main .header-last .header-last__links a svg {
 }
 
 .two {
-  height: 960px;
+  height: 1052px;
   background: url("../images/bg/bg-image-2.jpg");
-  background-position: center;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.two .container .two-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.two .container .two-main .two-main__info {
+  margin: 250px 0 0 0;
+  position: relative;
+}
+.two .container .two-main .two-main__info h4 {
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+.two .container .two-main .two-main__info h2 {
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  max-width: 410px;
+}
+.two .container .two-main .two-main__info h2::after {
+  content: "";
+  display: block;
+  width: 800px;
+  height: 3px;
+  background: #fff;
+  border-radius: 4px;
+  margin: 10px 0 72px 0;
+}
+.two .container .two-main .two-main__info p {
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  max-width: 360px;
+  right: 0;
+}
+.three {
+  height: 1052px;
+  background: url("../images/bg/bg-image-3.jpg");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
