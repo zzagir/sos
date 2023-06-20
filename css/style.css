@@ -60,6 +60,7 @@ body {
 header {
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 header .container .header-main {
   padding: 20px 0 0 0;
@@ -192,6 +193,7 @@ header .container .header-main .header-last .header-last__links a svg {
   margin: 0 0 28px 0;
 }
 .one .container .first-main .first-info button {
+  cursor: pointer;
   padding: 17px 17px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,6 +304,57 @@ header .container .header-main .header-last .header-last__links a svg {
   max-width: 360px;
   right: 0;
 }
+.two .container .two-main .two-main__slider {
+  margin: 200px 0 0 50px;
+}
+.two .container .two-main .two-main__slider .slider {
+  position: relative;
+  width: 500px;
+  height: 600px;
+}
+.two .container .two-main .two-main__slider .slider button svg {
+  cursor: pointer;
+  position: absolute;
+  right: -140px;
+  top: calc(50% - 18px);
+}
+.two .container .two-main .two-main__slider .slider img {
+  position: absolute;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+.two .container .two-main .two-main__slider .slider .slider-img-1 {
+  z-index: 5;
+  margin-left: 0;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.two .container .two-main .two-main__slider .slider .slider-img-2 {
+  z-index: 4;
+  margin-left: 50px;
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.two .container .two-main .two-main__slider .slider .slider-img-3 {
+  z-index: 3;
+  margin-left: 100px;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
 .three {
   height: 1052px;
   background: url("../images/bg/bg-image-3.jpg");
