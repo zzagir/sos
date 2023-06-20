@@ -1,22 +1,50 @@
 header
-    display: flex
-    justify-content: space-around
-    align-items: center
-    padding: 20px 0 0 0
-    .header-nav
-        ul
+    position: fixed
+    width: 100%
+    .container
+        .header-main
+            padding: 20px 0 0 0
             display: flex
-            li
-                a
-                    color: #fff
-                    font-size: 12px
-                    font-weight: 700
-                    letter-spacing: 0.1em
-                    text-transform: uppercase
-                    text-decoration: none
-            li:not(:last-child)
-                margin: 0 40px 0 0
+            justify-content: space-around
+            align-items: center
+            .header-nav
+                ul
+                    display: flex
+                    li
+                        a
+                            color: #fff
+                            font-size: 14px
+                            font-weight: 600
+                            letter-spacing: 0.1em
+                            text-transform: uppercase
+                            text-decoration: none
+                    li:not(:last-child)
+                        margin: 0 40px 0 0
 
-    .header-last
-        display: flex
-        align-items: center
+            .header-last
+                display: flex
+                align-items: center
+                .header-last__lang
+                    display: flex
+                    align-items: center
+                    div
+                        cursor: pointer
+                        display: flex
+                        align-items: center
+                    &::after
+                        content: ""
+                        display: block
+                        width: 1px
+                        height: 30px
+                        margin: 0 25px
+                        background: #fff
+                    svg
+                        margin: 0 5px
+                .header-last__links
+                    display: flex
+                    a
+                        display: block
+                        &:not(:last-child)
+                            margin: 0 10px 0 0
+                        svg
+                            display: block

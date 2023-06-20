@@ -26,6 +26,16 @@ a {
   text-decoration: none;
 }
 
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
 html {
   width: 100%;
   max-width: 100%;
@@ -34,10 +44,10 @@ html {
 
 body {
   width: 100%;
-  max-width: 100%;
+  margin: auto;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
-  background: red;
+  background: #000;
   color: #fff;
 }
 
@@ -48,6 +58,11 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
+}
+header .container .header-main {
+  padding: 20px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,29 +71,184 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0 0 0;
 }
-header .header-nav ul {
+header .container .header-main .header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .header-nav ul li a {
+header .container .header-main .header-nav ul li a {
   color: #fff;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
 }
-header .header-nav ul li:not(:last-child) {
+header .container .header-main .header-nav ul li:not(:last-child) {
   margin: 0 40px 0 0;
 }
-header .header-last {
+header .container .header-main .header-last {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .container .header-main .header-last .header-last__lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .container .header-main .header-last .header-last__lang div {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .container .header-main .header-last .header-last__lang::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  margin: 0 25px;
+  background: #fff;
+}
+header .container .header-main .header-last .header-last__lang svg {
+  margin: 0 5px;
+}
+header .container .header-main .header-last .header-last__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .container .header-main .header-last .header-last__links a {
+  display: block;
+}
+header .container .header-main .header-last .header-last__links a:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+header .container .header-main .header-last .header-last__links a svg {
+  display: block;
+}
+
+.one {
+  height: 960px;
+  background: url("../images/bg/bg-image-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.one .container .first-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.one .container .first-main .first-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 320px 0 0 0;
+}
+.one .container .first-main .first-info h2 {
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+}
+.one .container .first-main .first-info h3 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0 0 28px 0;
+}
+.one .container .first-main .first-info button {
+  padding: 17px 17px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  background: -o-linear-gradient(255.32deg, #FFB548 11.27%, #F3AF34 90.4%);
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 5px;
+  border: none;
+}
+.one .container .first-main .first-info button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.one .container .first-main .first-info button span::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 24px;
+  margin: 0 14px 0 12px;
+  background: #1A1917;
+}
+.one .container .first-main .first-scroll {
+  margin: 360px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.one .container .first-main .first-scroll div {
+  cursor: pointer;
+}
+.one .container .first-main .first-scroll div h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.two {
+  height: 960px;
+  background: url("../images/bg/bg-image-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
