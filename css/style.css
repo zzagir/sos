@@ -318,6 +318,59 @@ header .container .header-main .header-last .header-last__links a svg {
   right: -140px;
   top: calc(50% - 18px);
 }
+.two .container .two-main .two-main__slider .slider .i-main {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 6;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-55%, 0);
+      -ms-transform: translate(-55%, 0);
+          transform: translate(-55%, 0);
+}
+.two .container .two-main .two-main__slider .slider .i-main .i {
+  cursor: pointer;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.two .container .two-main .two-main__slider .slider .i-main .i:not(:last-child) {
+  margin-right: 40px;
+}
+.two .container .two-main .two-main__slider .slider .i-main .i::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  margin-left: 14px;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.two .container .two-main .two-main__slider .slider .i-main .i.active {
+  background: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.two .container .two-main .two-main__slider .slider .i-main .i.active:not(:last-child)::after {
+  width: 24px;
+  background: #fff;
+}
 .two .container .two-main .two-main__slider .slider img {
   position: absolute;
   border-radius: 15px;
@@ -361,4 +414,81 @@ header .container .header-main .header-last .header-last__links a svg {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.three .container .three-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.three .container .three-main .three-main__info {
+  margin: 180px 0 0 50px;
+}
+.three .container .three-main .three-main__info .text-info {
+  margin: 0 0 70px 0;
+}
+.three .container .three-main .three-main__info .text-info h4 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+.three .container .three-main .three-main__info .text-info h2 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.three .container .three-main .three-main__info .text-slider ul li {
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.three .container .three-main .three-main__info .text-slider ul li h3 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  margin: 0 0 5px 0;
+}
+.three .container .three-main .three-main__info .text-slider ul li p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  max-width: 360px;
+  height: 0;
+  display: block;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  opacity: 0;
+  -webkit-animation: ani 1s forwards;
+          animation: ani 1s forwards;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.three .container .three-main .three-main__info .text-slider ul li .text-active {
+  display: block;
+  height: 100%;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }/*# sourceMappingURL=style.css.map */

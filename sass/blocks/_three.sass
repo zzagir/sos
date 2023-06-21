@@ -4,3 +4,65 @@
   background-position: top
   background-size: cover
   background-repeat: no-repeat
+  .container
+    .three-main
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: 1fr
+      grid-column-gap: 0px
+      grid-row-gap: 0px
+      .three-main__info
+        margin: 180px 0 0 50px
+        .text-info
+          margin: 0 0 70px 0
+          h4
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 24px
+            letter-spacing: 2px
+            margin: 0 0 10px 0
+          h2
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 500
+            font-size: 80px
+            line-height: 80px
+            letter-spacing: 3px
+            text-transform: uppercase
+        .text-slider
+          ul
+            li
+              cursor: pointer
+              margin-bottom: 40px
+              h3
+                font-family: 'Bebas Neue'
+                font-style: normal
+                font-weight: 500
+                font-size: 36px
+                line-height: 36px
+                letter-spacing: 2px
+                color: #FFB548
+                margin: 0 0 5px 0
+              p
+                font-family: 'Open Sans'
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 22px
+                text-align: justify
+                max-width: 360px
+                height: 0
+                display: block
+                width: 100%
+                transform: translate(0, -50%)
+                opacity: 0
+                animation: ani 1s forwards
+                transition: all 0.1s ease-out
+              .text-active
+                display: block
+                height: 100%
+                transform: translate(0, 0)
+                opacity: 1
+                transition: all 0.1s ease-out
