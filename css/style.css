@@ -204,6 +204,7 @@ header .container .header-main .header-last .header-last__links a svg {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  color: #000;
   background: -o-linear-gradient(255.32deg, #FFB548 11.27%, #F3AF34 90.4%);
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 5px;
@@ -331,7 +332,6 @@ header .container .header-main .header-last .header-last__links a svg {
           transform: translate(-55%, 0);
 }
 .two .container .two-main .two-main__slider .slider .i-main .i {
-  cursor: pointer;
   display: block;
   width: 16px;
   height: 16px;
@@ -383,9 +383,9 @@ header .container .header-main .header-last .header-last__links a svg {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .two .container .two-main .two-main__slider .slider .slider-img-2 {
   z-index: 4;
@@ -393,9 +393,9 @@ header .container .header-main .header-last .header-last__links a svg {
   -webkit-transform: scale(0.95);
       -ms-transform: scale(0.95);
           transform: scale(0.95);
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .two .container .two-main .two-main__slider .slider .slider-img-3 {
   z-index: 3;
@@ -403,9 +403,9 @@ header .container .header-main .header-last .header-last__links a svg {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .three {
@@ -446,6 +446,12 @@ header .container .header-main .header-last .header-last__links a svg {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+.three .container .three-main .three-main__info .text-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
 .three .container .three-main .three-main__info .text-slider ul li {
   cursor: pointer;
   margin-bottom: 40px;
@@ -459,6 +465,27 @@ header .container .header-main .header-last .header-last__links a svg {
   letter-spacing: 2px;
   color: #FFB548;
   margin: 0 0 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.three .container .three-main .three-main__info .text-slider ul li h3::before {
+  content: "";
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 15px 0 0;
+}
+.three .container .three-main .three-main__info .text-slider ul li .h3-active::before {
+  background: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .three .container .three-main .three-main__info .text-slider ul li p {
   font-family: "Open Sans";
@@ -468,15 +495,12 @@ header .container .header-main .header-last .header-last__links a svg {
   line-height: 22px;
   text-align: justify;
   max-width: 360px;
-  height: 0;
-  display: block;
-  width: 100%;
+  display: none;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
   opacity: 0;
-  -webkit-animation: ani 1s forwards;
-          animation: ani 1s forwards;
+  margin: 0 0 0 30px;
   -webkit-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
@@ -484,6 +508,7 @@ header .container .header-main .header-last .header-last__links a svg {
 .three .container .three-main .three-main__info .text-slider ul li .text-active {
   display: block;
   height: 100%;
+  width: 100%;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
@@ -491,4 +516,177 @@ header .container .header-main .header-last .header-last__links a svg {
   -webkit-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
+}
+
+.four {
+  height: 960px;
+  background: url("../images/bg/bg-image-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.four .container .four-main .four-main-text {
+  padding: 150px 0 0 0;
+  text-align: center;
+  margin: 0 0 140px 0;
+}
+.four .container .four-main .four-main-text h3 {
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+}
+.four .container .four-main .four-main-text h2 {
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.four .container .four-main .four-main-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.four .container .four-main .four-main-info .four-main__info {
+  background-image: url("../images/frame.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 290px 310px;
+  grid-template-rows: 132px 132px 154px;
+  gap: 0px;
+  height: 420px;
+  width: 600px;
+}
+.four .container .four-main .four-main-info .four-main__info .items {
+  padding: 15px 20px;
+}
+.four .container .four-main .four-main-info .four-main__info .items h2 {
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  margin: 0 0 8px 0;
+}
+.four .container .four-main .four-main-info .four-main__info .items p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.four .container .four-main .four-main-info .four-main__info #item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.four .container .four-main .four-main-info .four-main__info #item-1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+}
+.four .container .four-main .four-main-info .four-main__info #item-2 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+.four .container .four-main .four-main-info .four-main__info #item-3 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.four .container .four-main .four-main-info .four-main__info #item-4 {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+
+.five {
+  height: 1920px;
+  background: url("../images/bg/bg-image-5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.five .container .five-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.five .container .five-main .five-main__reviews .people {
+  padding: 20px;
+  background: #999;
+}
+.five .container .five-main .five-main__reviews .people .people-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.five .container .five-main .five-main__reviews .people .people-one img {
+  position: relative;
+}
+.five .container .five-main .five-main__reviews .people .people-one img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background: #FFB548;
+}
+.five .container .five-main .five-main__info h4 {
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+.five .container .five-main .five-main__info h2 {
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.five .container .five-main .five-main__info p {
+  max-width: 430px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.five .container .five-main .five-main__info button {
+  background: -o-linear-gradient(255.32deg, #FFB548 11.27%, #F3AF34 90.4%);
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 4px;
+  padding: 20px 36px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */

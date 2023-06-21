@@ -52,3 +52,41 @@ function next() {
     i = 0
   }
 };
+
+let text1 = document.querySelector(".text-slider-1");
+let textP1 = document.querySelector(".text-slider-1").querySelector("p");
+let text2 = document.querySelector(".text-slider-2");
+let textP2 = document.querySelector(".text-slider-2").querySelector("p");
+let text3 = document.querySelector(".text-slider-3");
+let textP3 = document.querySelector(".text-slider-3").querySelector("p");
+let textH1 = document.querySelector(".text-h3-1");
+let textH2 = document.querySelector(".text-h3-2");
+let textH3 = document.querySelector(".text-h3-3");
+
+
+text1.addEventListener('click', function () {
+  textP1.classList.toggle("text-active");
+  textP2.classList.remove("text-active");
+  textP3.classList.remove("text-active");
+  textH1.classList.toggle("h3-active");
+  textH2.classList.remove("h3-active");
+  textH3.classList.remove("h3-active");
+}, false);
+
+text2.addEventListener('click', function () {
+  textP1.classList.remove("text-active");
+  textP2.classList.toggle("text-active");
+  textP3.classList.remove("text-active");
+  textH1.classList.remove("h3-active");
+  textH2.classList.toggle("h3-active");
+  textH3.classList.remove("h3-active");
+}, false);
+
+text3.addEventListener('click', function () {
+  textP1.classList.remove("text-active");
+  textP2.classList.remove("text-active");
+  textP3.classList.toggle("text-active");
+  textH1.classList.remove("h3-active");
+  textH2.classList.remove("h3-active");
+  textH3.classList.toggle("h3-active");
+}, false);

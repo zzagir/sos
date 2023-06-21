@@ -32,6 +32,8 @@
             letter-spacing: 3px
             text-transform: uppercase
         .text-slider
+          display: flex
+          position: relative
           ul
             li
               cursor: pointer
@@ -45,6 +47,20 @@
                 letter-spacing: 2px
                 color: #FFB548
                 margin: 0 0 5px 0
+                display: flex
+                align-items: center
+                &::before
+                  content: ""
+                  display: block
+                  height: 15px
+                  width: 15px
+                  border-radius: 50%
+                  border: 1px solid #fff
+                  margin: 0 15px 0 0
+              .h3-active
+                &::before
+                  background: #fff
+                  transition: all 0.3s ease-out
               p
                 font-family: 'Open Sans'
                 font-style: normal
@@ -53,16 +69,15 @@
                 line-height: 22px
                 text-align: justify
                 max-width: 360px
-                height: 0
-                display: block
-                width: 100%
+                display: none
                 transform: translate(0, -50%)
                 opacity: 0
-                animation: ani 1s forwards
+                margin: 0 0 0 30px
                 transition: all 0.1s ease-out
               .text-active
                 display: block
                 height: 100%
+                width: 100%
                 transform: translate(0, 0)
                 opacity: 1
                 transition: all 0.1s ease-out
