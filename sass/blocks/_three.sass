@@ -49,6 +49,12 @@
                 margin: 0 0 5px 0
                 display: flex
                 align-items: center
+                transition: .3s
+                &:hover
+                  color: #fddaa5
+                &:hover
+                  &::before
+                    border: 2px solid #fddaa5
                 &::before
                   content: ""
                   display: block
@@ -57,6 +63,7 @@
                   border-radius: 50%
                   border: 1px solid #fff
                   margin: 0 15px 0 0
+                  transition: .1s
               .h3-active
                 &::before
                   background: #fff

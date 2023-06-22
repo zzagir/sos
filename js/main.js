@@ -90,3 +90,8 @@ text3.addEventListener('click', function () {
   textH2.classList.remove("h3-active");
   textH3.classList.toggle("h3-active");
 }, false);
+
+// let scrollPage = document.querySelector(".scroll");
+// // scrollPage.addEventListener('click', function () {
+// //   // window.scrollBy(0, 970);
+// // }, false);

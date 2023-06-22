@@ -19,6 +19,9 @@ header
                             letter-spacing: 0.1em
                             text-transform: uppercase
                             text-decoration: none
+                            transition: .3s
+                            &:hover
+                                color: #ff9900
                     li:not(:last-child)
                         margin: 0 40px 0 0
 
@@ -32,6 +35,11 @@ header
                         cursor: pointer
                         display: flex
                         align-items: center
+                        transition: .3s
+                        &:hover .lang path
+                            stroke: #ff9900
+                        &:hover
+                            color: #ff9900
                     &::after
                         content: ""
                         display: block
@@ -43,11 +51,17 @@ header
                         border-radius: 5px
                     svg
                         margin: 0 5px
+                        path
+                            transition: .3s
                 .header-last__links
                     display: flex
                     a
                         display: block
                         &:not(:last-child)
                             margin: 0 10px 0 0
+                        &:hover .links path
+                            fill: #ff9900
                         svg
                             display: block
+                            path
+                                transition: .3s

@@ -55,11 +55,15 @@
           width: 500px
           height: 600px
           button
+            &:hover .scroll-svg path
+              stroke: #ff9900
             svg
               cursor: pointer
               position: absolute
               right: -140px
               top: calc(50% - 18px)
+              path
+                transition: .3s
           .i-main
             position: absolute
             display: flex
