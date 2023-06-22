@@ -8,6 +8,40 @@ header
             display: flex
             justify-content: space-around
             align-items: center
+            .header-menu
+                cursor: pointer
+                display: none
+                position: relative
+                svg
+                    width: 30px
+                ul
+                    flex-direction: column
+                    position: absolute
+                    background: rgba(0, 0, 0, 0.9)
+                    padding: 15px 10px
+                    border-radius: 4px
+                    cursor: auto
+                    top: 44px
+                    right: 0
+                    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+                    li
+                        display: block
+                        margin: 0 0 10px 0
+                        text-decoration: none
+                        a
+                            text-decoration: none
+                            color: #fff
+                            padding: 0 5px
+                            font-size: 17px
+                            text-transform: uppercase
+                            transition: all .2s ease-in-out
+                            &:hover
+                                transform: none
+                                color: #ff9900
+                        &:last-child
+                            margin: 0
+                            a
+                                display: block
             .header-nav
                 ul
                     display: flex
@@ -65,3 +99,85 @@ header
                             display: block
                             path
                                 transition: .3s
+
+// POPUP
+.header-last__lang
+    display: block
+    cursor: pointer
+    position: relative
+    ul
+        flex-direction: column
+        align-items: flex-start
+        position: absolute
+        background: rgba(0, 0, 0, 0.75)
+        padding: 6px 16px 6px 6px
+        border-radius: 4px
+        cursor: auto
+        top: 36px
+        left: -4px
+        box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+
+        li
+            display: block
+            &:not(:last-child)
+                margin: 0 0 2px 0
+            a
+                cursor: pointer
+                display: block
+                color: #FFF
+                text-align: left
+                font-size: 14px
+                font-family: Open Sans
+                font-weight: 600
+                letter-spacing: 1.2px
+                text-transform: uppercase
+                transition: .3s
+                &:hover
+                    color: #ff9900
+.submenu
+    transition: all .15s linear
+    visibility: hidden
+    opacity: 0
+
+.header-menu
+    .hdr-btn
+        display: block
+        path
+            stroke: #fff
+    .hdr-cls
+        display: none
+        line
+            stroke: #fff
+    .hdrmenu
+        transition: all .15s linear
+        visibility: hidden
+        opacity: 0
+        width: 250px
+        li
+            a
+                &:hover
+                    color: #ff9900
+.show
+    display: block !important
+    visibility: visible !important
+    opacity: 1 !important
+
+@media (max-width: 996px)
+    .header-main
+        padding: 20px 20px !important
+        justify-content: space-between !important
+        .header-last
+            display: none !important
+        .header-nav
+            ul
+                li
+                    margin: 0 20px 0 0 !important
+
+@media (max-width: 776px)
+    .header-main
+        padding: 20px 20px !important
+        justify-content: space-between !important
+        .header-nav
+            display: none !important
+        .header-menu
+            display: block !important

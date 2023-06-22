@@ -5,6 +5,12 @@
 	<meta charset="UTF-8">
 	<title>SOS</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
 
 <body>
@@ -26,7 +32,7 @@
 					</div>
 					<div class="header-last">
 						<div class="header-last__lang">
-							<div>
+							<div class="submenu-btn">
 								ENG
 								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"
 									class="lang">
@@ -34,6 +40,11 @@
 										stroke-linecap="round" />
 								</svg>
 							</div>
+							<ul class="submenu" id="submenu">
+								<li><a href="/">RUS</a></li>
+								<li><a href="/">FRA</a></li>
+								<li><a href="/">DEU</a></li>
+							</ul>
 						</div>
 						<div class="header-last__links">
 							<a href="#">
@@ -56,6 +67,32 @@
 								</svg>
 							</a>
 						</div>
+					</div>
+					<div class="header-menu">
+						<svg class="hdr-btn" width="30" height="31" viewBox="0 0 30 31" fill="none"
+							xmlns="http://www.w3.org/2000/svg" alt="menu mobile">
+							<path d="M25 8.18457L12.5 8.18457" stroke="#1F1F2B" stroke-width="2.5" stroke-linecap="round"
+								stroke-linejoin="round" class="hdr-btn-menu" />
+							<path d="M25 15.6846L5 15.6846" stroke="#1F1F2B" stroke-width="2.5" stroke-linecap="round"
+								stroke-linejoin="round" class="hdr-btn-menu" />
+							<path d="M25 23.1846L17.5 23.1846" stroke="#1F1F2B" stroke-width="2.5" stroke-linecap="round"
+								stroke-linejoin="round" class="hdr-btn-menu" />
+						</svg>
+						<svg class="hdr-cls icon icon-tabler icon-tabler-x" xmlns="http://www.w3.org/2000/svg" width="24"
+							height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+							stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" />
+							<line x1="18" y1="6" x2="6" y2="18" stroke="#1f1f2b" class="hdr-cls-menu" />
+							<line x1="6" y1="6" x2="18" y2="18" stroke="#1f1f2b" class="hdr-cls-menu" />
+						</svg>
+						<ul class="hdrmenu">
+							<li><a href="#">MAIN</a></li>
+							<li><a href="#">about</a></li>
+							<li><a href="#">game features</a></li>
+							<li><a href="#">System requirements</a></li>
+							<li><a href="#">quotes</a></li>
+							<li><a href="#">Language</a></li>
+						</ul>
 					</div>
 				</div>
 

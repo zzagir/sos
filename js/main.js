@@ -95,3 +95,31 @@ text3.addEventListener('click', function () {
 // // scrollPage.addEventListener('click', function () {
 // //   // window.scrollBy(0, 970);
 // // }, false);
+
+$(document).ready(function () {
+  $(".submenu-btn").click(function () {
+    $(".submenu").toggleClass("show");
+  });
+});
+
+$(document).on("click", function (event) {
+  if (!$(event.target).closest(".submenu-btn").length) {
+    $(".submenu").removeClass("show");
+  }
+});
+
+$(document).ready(function () {
+  $(".hdr-btn").click(function () {
+    $(".hdrmenu").toggleClass("show");
+    $(".hdr-btn").css("display", "none");
+    $(".hdr-cls").css("display", "block");
+  });
+});
+
+$(document).on("click", function (event) {
+  if (!$(event.target).closest(".hdr-btn").length) {
+    $(".hdrmenu").removeClass("show");
+    $(".hdr-btn").css("display", "block");
+    $(".hdr-cls").css("display", "none");
+  }
+});

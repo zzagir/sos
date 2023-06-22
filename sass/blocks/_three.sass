@@ -83,8 +83,39 @@
                 transition: all 0.1s ease-out
               .text-active
                 display: block
-                height: 100%
-                width: 100%
                 transform: translate(0, 0)
                 opacity: 1
                 transition: all 0.1s ease-out
+
+@media (max-width: 1024px)
+  .three-main
+    .three-main__info
+      margin: 180px 0 0 0 !important
+
+@media (max-width: 860px)
+  .three
+    background-position: left !important
+    .container
+      .three-main
+        display: flex !important
+        .three-main__null
+          display: none !important
+        .three-main__info
+          padding: 0 0 0 40px
+          background-color: #000000a8
+          border-radius: 10px
+          .text-info
+            padding: 40px 0 0 0 !important
+          .text-slider
+            ul
+              li
+                p
+                  margin: 0 30px 0 30px !important
+
+@media (max-width: 535px)
+  .three-main
+    .three-main__info
+      padding: 0 20px !important
+      background-color: #000000a8
+      border-radius: 10px !important
+      width: 100% !important

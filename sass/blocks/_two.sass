@@ -11,6 +11,7 @@
       grid-template-rows: 1fr
       grid-column-gap: 0px
       grid-row-gap: 0px
+      padding: 0 20px
       .two-main__info
         margin: 250px 0 0 0
         position: relative
@@ -118,3 +119,59 @@
             margin-left: 100px
             transform: scale(0.9)
             transition: all 0.2s ease-out
+
+@media (max-width: 1440px)
+  .two-main
+    grid-template-columns: 5fr 7fr !important
+    .two-main__info
+      padding-left: 40px
+
+@media (max-width: 1212px)
+  .two-main
+    display: flex !important
+    flex-direction: column !important
+    .two-main__info
+      margin: 50px 0 0 0 !important
+      h2
+        &::after
+          margin: 0 !important
+          width: 100% !important
+      p
+        margin: 20px 0 0 0
+        position: relative !important
+        max-width: 90% !important
+    .two-main__slider
+      margin: 50px 0 0 0 !important
+      padding: 0 40px !important
+
+@media (max-width: 740px)
+  .two-main
+    .two-main__info
+      padding: 0 !important
+    .two-main__slider
+      padding: 0 !important
+      .slider
+        width: 400px !important
+        height: 500px !important
+        button
+          svg
+            top: auto !important
+            right: calc(50% - 32px) !important
+            bottom: -60px !important
+
+@media (max-width: 530px)
+  .two-main
+    .two-main__info
+      h2
+        font-size: 60px !important
+        letter-spacing: 1px !important
+    .two-main__slider
+      padding: 0 !important
+      .slider
+        width: 290px !important
+        height: 380px !important
+        button
+          svg
+            top: auto !important
+            right: calc(50% - 32px) !important
+            bottom: -60px !important
