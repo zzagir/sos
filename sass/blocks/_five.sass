@@ -11,24 +11,73 @@
       grid-template-rows: 1fr
       grid-column-gap: 0px
       grid-row-gap: 0px
+      height: 960px
       .five-main__reviews
+        margin: 160px 0 0 0
         .people
           padding: 20px
-          background: #999
+          background: #252525
+          border-radius: 10px
+          max-width: 450px
           .people-one
             display: flex
-            img
-              position: relative
-              &::after
+            align-items: center
+            margin: 0 0 20px 0
+            position: relative
+            .people-photo
+              div
+                position: relative
+                z-index: 2
+                width: 60px
+                height: 60px
+                background-position: center
+                background-repeat: no-repeat
+                background-size: cover
+              span
                 content: ""
-                display: block
-                width: 100%
-                height: 100%
                 position: absolute
+                width: 56px
+                height: 56px
                 border-radius: 50%
+                top: 6px
+                left: 8px
+                z-index: 1
                 background: #FFB548
 
+            .people-logo
+              position: absolute
+              right: 10px
+            .people-name
+              margin: 0 0 0 20px
+              h4
+                color: #FFB548
+                font-size: 24px
+                font-family: Bebas Neue
+                font-weight: 500
+                letter-spacing: 2px
+              p
+                color: #FFF
+                text-align: justify
+                font-size: 18px
+                font-family: Open Sans
+                line-height: 22px
+                opacity: 0.5
+          .people-two
+            h5
+              color: #FFF
+              font-size: 18px
+              font-family: Open Sans
+              font-weight: 300
+              margin: 0 0 10px 0
+            p
+              color: #FFF
+              font-size: 14px
+              font-family: Open Sans
+              font-weight: 300
+              opacity: 0.5
+
       .five-main__info
+        margin: 300px 0 0 0
         h4
           font-family: 'Bebas Neue'
           font-weight: 500
@@ -36,6 +85,7 @@
           line-height: 24px
           letter-spacing: 2px
           color: #FFFFFF
+          margin: 0 0 10px 0
         h2
           font-family: 'Bebas Neue'
           font-weight: 500
@@ -44,6 +94,7 @@
           letter-spacing: 3px
           text-transform: uppercase
           color: #FFFFFF
+          margin: 0 0 50px 0
         p
           max-width: 430px
           font-family: 'Open Sans'
@@ -51,6 +102,7 @@
           font-size: 18px
           line-height: 22px
           color: #FFFFFF
+          margin: 0 0 50px 0
         button
           background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%)
           border-radius: 4px
@@ -62,3 +114,24 @@
           line-height: 22px
           text-align: center
           text-transform: capitalize
+
+.five-main__reviews
+  .people
+    &:nth-child(1)
+      margin: 0 0 30px 100px
+      .people-one
+        .people-photo
+          div
+            background: url(../images/reviews/photo-1.svg)
+    &:nth-child(2)
+      margin: 0 0 30px 0
+      .people-one
+        .people-photo
+          div
+            background: url(../images/reviews/photo-2.svg)
+    &:nth-child(3)
+      margin: 0 0 30px 100px
+      .people-one
+        .people-photo
+          div
+            background: url(../images/reviews/photo-3.svg)
