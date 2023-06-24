@@ -1,6 +1,7 @@
 .five
   .container
     footer
+      padding: 0 20px
       .prefooter
         display: flex
         align-items: flex-end
@@ -45,6 +46,7 @@
                 transition: .3s
 
       .footer
+        padding: 30px
         span
           margin: 40px 0 20px 0
           display: block
@@ -63,6 +65,7 @@
             font-family: Open Sans
             opacity: 0.5
             font-weight: 300
+            margin-right: 30px
           .footer-links
             ul
               display: flex
@@ -105,3 +108,53 @@
 .prefooter-links__twitch
   &:hover svg path
     fill: #6441a5
+
+@media (max-width: 1200px)
+  footer
+    margin: 100px 0 0 0 !important
+    .prefooter
+      display: flex !important
+      flex-direction: column !important
+      align-items: center !important
+      .prefooter-logo
+        margin: 0 0 20px 0 !important
+      .prefooter-nav
+        margin: 0 0 20px 0 !important
+
+@media (max-width: 800px)
+  footer
+    .prefooter
+      .prefooter-nav
+        ul
+          display: flex !important
+          flex-direction: column !important
+          align-items: center !important
+          li
+            margin: auto auto 30px auto !important
+            a
+              font-size: 22px !important
+
+@media (max-width: 720px)
+  .footer
+    div
+      display: flex !important
+      align-items: center !important
+      flex-direction: column !important
+      .footer-links
+        margin: 20px 0 !important
+        display: flex !important
+        align-items: center !important
+
+@media (max-width: 620px)
+  .footer
+    div
+      .footer-links
+        ul
+          flex-direction: column !important
+          li
+            &:not(:last-child)
+              margin: auto auto 20px auto !important
+            &::after
+              display: none !important
+            a
+              font-size: 16px !important

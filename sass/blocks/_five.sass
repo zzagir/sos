@@ -1,5 +1,5 @@
 .five
-  height: 1920px
+  height: auto
   background: url('../images/bg/bg-image-5.jpg')
   background-position: center
   background-size: cover
@@ -12,6 +12,7 @@
       grid-column-gap: 0px
       grid-row-gap: 0px
       height: 960px
+      padding: 0 40px
       .five-main__reviews
         margin: 160px 0 0 0
         .people
@@ -138,3 +139,32 @@
         .people-photo
           div
             background: url(../images/reviews/photo-3.svg)
+
+@media (max-width: 1024px)
+  .five
+    .container
+      .five-main
+        display: flex !important
+        flex-direction: column !important
+        .five-main__info
+          margin: 20px 0 0 0 !important
+          text-align: center
+          h2
+            margin: 0 0 10px 0 !important
+          p
+            margin: 0 auto 40px auto
+            max-width: 80%
+        .five-main__reviews
+          margin: 30px auto 0 auto !important
+
+@media (max-width: 640px)
+  .five
+    .container
+      .five-main
+        .five-main__reviews
+          .people
+            z-index: 3
+            max-width: 100% !important
+            margin: 0 !important
+            &:not(:last-child)
+              margin: 0 0 20px 0 !important
