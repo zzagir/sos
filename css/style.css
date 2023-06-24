@@ -1153,6 +1153,7 @@ header .container .header-main .header-last .header-last__links a svg path {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  color: #000;
 }
 .five .container .five-main .five-main__info button:hover {
   background: #ff9900;
